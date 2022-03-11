@@ -11,8 +11,8 @@ Progress 0%
 * [x] Contact Information
 * [ ] Working Links
 * [ ] Adding Real Images
-* [ ] Typography
-* [ ] Animations
+* [x] Typography
+* [x] Animations
 ## Mockup
 ![FirstMockup](/assets/images/Mockup.png)
 *Subject to change*

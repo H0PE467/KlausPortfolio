@@ -83,9 +83,7 @@ nav button{
 }
 
 button:hover{
-    text-decoration: underline;
     color: var(--light);
-    font-size: 1.05em;
     transition-duration: 400ms;
 }
 
@@ -147,10 +145,6 @@ button:hover{
     transform: scale(0.75);
 }
 
-#Photo1{
-
-}
-
 #Photo2{
     left: 950px;
     top: 250px;
@@ -171,6 +165,25 @@ button:hover{
 .Proyect-Title{
     text-align: center;
     font-size: 2em;
+}
+
+.image-container{
+    cursor: pointer;
+}
+
+.image-container::before{
+    width: 320px;
+    height: 320px;
+    background-color: rgba(34, 34, 34, 0.5);
+    z-index: 30;
+    content: "";
+    position: absolute;
+    transition: 150ms;
+}
+
+.image-container:hover::before{   
+    background-color: rgba(34, 34, 34, 0);
+    z-index: -1;
 }
 
 .Project-card p,
@@ -205,6 +218,7 @@ footer{
     background-color: var(--dark);
     margin: 0;
     padding-bottom: 0;
+    transition: 500ms;
 }
 
 footer h3{
