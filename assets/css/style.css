@@ -2,7 +2,7 @@
     --dark:#1d1c1c;
     --notsodark:#363535;
     --light:#fff;
-    --notsolight:#afafaf;
+    --notsolight:#8a8a8a;
 }
 
 html {
@@ -57,6 +57,7 @@ nav ul li{
 }
 
 nav ul li button{
+    color: var(--notsolight);
     padding: 24px 48px;
 }
 
@@ -186,6 +187,19 @@ button:hover{
     padding-left: 0px;
 }
 
+.Project-card ul li{
+    margin: 5px 0px;
+}
+
+.Project-card ul li span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.Project-card ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
 
 footer{
     background-color: var(--dark);
@@ -214,3 +228,10 @@ footer ul li{
     margin: 0px 150px;
     color: var(--light);
 }
+
+footer ul li a{
+    font-family: Arial;
+}
+
+
+

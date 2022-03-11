@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?htrytt');
+  src:  url('fonts/icomoon.eot?htrytt#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?htrytt') format('truetype'),
+    url('fonts/icomoon.woff?htrytt') format('woff'),
+    url('fonts/icomoon.svg?htrytt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-document-file-java:before {
+  content: "\e900";
+}
+.icon-document-file-java1:before {
+  content: "\e901";
+}
+.icon-file-java:before {
+  content: "\e902";
+}
+.icon-file-java1:before {
+  content: "\e903";
+}
+.icon-java:before {
+  content: "\e904";
+  color: #007396;
+}
+.icon-javascript:before {
+  content: "\e905";
+  color: #f7df1e;
+}
+.icon-mail2:before {
+  content: "\ea84";
+}
+.icon-mail4:before {
+  content: "\ea86";
+}
+.icon-google2:before {
+  content: "\ea89";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-lanyrd:before {
+  content: "\eaa2";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-stackoverflow:before {
+  content: "\ead0";
+}
+.icon-html-five:before {
+  content: "\eae4";
+}
+.icon-html-five2:before {
+  content: "\eae5";
+}
+.icon-css3:before {
+  content: "\eae6";
+}
+.icon-git:before {
+  content: "\eae7";
+}
+
