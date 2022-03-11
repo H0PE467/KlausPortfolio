@@ -9,6 +9,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--notsodark);
     margin: 0;
+    color: var(--light);
+
 }
 
 header{
@@ -20,7 +22,6 @@ header{
 }
 
 h1{
-    color: var(--light);
     font-weight: bold;
     font-size: 4em;
     margin: 0;
@@ -47,9 +48,66 @@ nav ul li{
     display: inline-block;
     padding: 24px 48px;
     font-size: 2em;
-    color: var(--light);
 }
 
 nav ul li:hover{
     cursor: pointer;
+}
+
+#AboutMe{
+    display: flex;
+    justify-content: center;
+    flex:1;
+}
+
+.Info{
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 600px;
+}
+
+.Info ul, .Info h2{
+    padding: 0px 0px;
+    margin: 5px 50px;
+    text-align: right;
+    font-size: 3em;
+}
+
+.Info h2{
+    font-size: 3em;
+}
+
+.Info ul{
+    font-size: 2em;
+}
+
+
+
+.Info ul li{
+    list-style: none;
+}
+
+.Avatar{
+    width: 50%;
+    margin: 0;
+
+}
+
+.Avatar img{
+    position: relative;
+    transform: scale(0.75);
+}
+
+#Photo1{
+    left: 142px;
+
+}
+
+#Photo2{
+    top: -325px;
+    left: -50px;
 }
