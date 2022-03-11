@@ -5,10 +5,10 @@ This project stores a webpage where it summarizes all of Klaus Cedillo’s Proje
 
 Progress 0%
 
-* [ ] Header and Navbar
-* [ ] About Me
-* [ ] Projects
-* [ ] Contact Information
+* [x] Header and Navbar
+* [x] About Me
+* [x] Projects
+* [x] Contact Information
 * [ ] Working Links
 * [ ] Adding Real Images
 * [ ] Typography

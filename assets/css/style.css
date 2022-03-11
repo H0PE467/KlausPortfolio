@@ -2,6 +2,11 @@
     --dark:#1d1c1c;
     --notsodark:#363535;
     --light:#fff;
+    --notsolight:#afafaf;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -15,10 +20,12 @@ body{
 
 header{
     width: 100%;
-    background-color: var(--dark);
+    background-color: rgba(29, 28, 28, 0.95);
     margin: 0;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 50;
 }
 
 h1{
@@ -46,15 +53,50 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    padding: 24px 48px;
     font-size: 2em;
 }
 
-nav ul li:hover{
-    cursor: pointer;
+nav ul li button{
+    padding: 24px 48px;
+}
+
+a{
+    color: var(--notsolight);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--light);
+    font-size: 1.05em;
+    transition-duration: 400ms;
+}
+
+nav button{
+    color: var(--notsolight);
+    text-decoration: none;
+    background: none;
+	color: inherit;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover{
+    text-decoration: underline;
+    color: var(--light);
+    font-size: 1.05em;
+    transition-duration: 400ms;
+}
+
+.vacio{
+    width: 100%;
+    height: 100px;
+    display: block;
+    position:relative;
 }
 
 #AboutMe{
+    top: 100px;
     display: flex;
     justify-content: center;
     flex:1;
@@ -94,20 +136,81 @@ nav ul li:hover{
 .Avatar{
     width: 50%;
     margin: 0;
+    height: max-content;
+    overflow: auto;
 
 }
 
 .Avatar img{
-    position: relative;
+    position: absolute;
     transform: scale(0.75);
 }
 
 #Photo1{
-    left: 142px;
 
 }
 
 #Photo2{
-    top: -325px;
-    left: -50px;
+    left: 950px;
+    top: 250px;
+}
+
+#Projects h2{
+    margin: 100px 0px 25px 0px;
+    text-align: center;
+    font-size: 4em;
+}
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Proyect-Title{
+    text-align: center;
+    font-size: 2em;
+}
+
+.Project-card p,
+.Project-card ul {
+    font-size: 1.5em; 
+}
+
+.Project-card p{
+    font-weight: bold;
+}
+
+.Project-card ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+footer{
+    background-color: var(--dark);
+    margin: 0;
+    padding-bottom: 0;
+}
+
+footer h3{
+    margin: 50px 0px 25px 0px;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+    }
+
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    position: relative;
+    left: -30px;
+    padding-bottom: 25px;
+    margin: 0px;
+}
+
+footer ul li{
+    margin: 0px 150px;
+    color: var(--light);
 }
