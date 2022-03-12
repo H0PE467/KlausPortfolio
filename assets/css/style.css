@@ -191,6 +191,16 @@ button:hover{
     font-size: 1.5em; 
 }
 
+#FirstProject img{
+    transform: scale(1);
+}
+
+#FirstProject .image-container::before{
+    width: 360px;
+    height: 360px;
+}
+
+
 .Project-card p{
     font-weight: bold;
 }
@@ -230,8 +240,9 @@ footer h3{
 
 footer ul{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    justify-content: center;
+    justify-content: space-evenly;
     position: relative;
     left: -30px;
     padding-bottom: 25px;
@@ -239,8 +250,8 @@ footer ul{
 }
 
 footer ul li{
-    margin: 0px 150px;
     color: var(--light);
+    padding-top: 5px;
 }
 
 footer ul li a{
@@ -248,4 +259,54 @@ footer ul li a{
 }
 
 
+@media screen and (max-width: 992px){
+    nav ul li{
+        font-size: 1.5em;
+    }
 
+    nav ul li button{
+        color: var(--notsolight);
+        padding: 12px 24px;
+    }
+
+    .Info h2{
+        font-size: 2.5em;
+    }
+
+    .Info ul{
+        font-size: 1.5em;
+
+    }
+    #Photo1{
+        transform: scale(0.60);
+        right: -50px;
+    }
+
+    #Photo2{
+        display: none;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: none;
+    }
+
+    .Info h2{
+        font-size: 2em;
+    }
+
+    .Info ul{
+        font-size: 1em;
+
+    }
+
+    #Photo1{
+        transform: scale(0.50);
+        right: -120px;
+    }
+}

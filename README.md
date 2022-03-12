@@ -9,10 +9,11 @@ Progress 0%
 * [x] About Me
 * [x] Projects
 * [x] Contact Information
-* [ ] Working Links
-* [ ] Adding Real Images
+* [x] Working Links
+* [x] Adding Real Images
 * [x] Typography
 * [x] Animations
+* [x] Responsive
 ## Mockup
 ![FirstMockup](/assets/images/Mockup.png)
 *Subject to change*
