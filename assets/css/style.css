@@ -18,6 +18,9 @@ body{
 
 }
 
+
+/* Header over the webpage*/
+
 header{
     width: 100%;
     background-color: rgba(29, 28, 28, 0.95);
@@ -87,6 +90,8 @@ button:hover{
     transition-duration: 400ms;
 }
 
+/* Empty section to avoid initial contect getting behind the navbar*/
+
 .vacio{
     width: 100%;
     height: 100px;
@@ -94,12 +99,16 @@ button:hover{
     position:relative;
 }
 
+/* First Section - Photo, Name and Data*/
+
 #AboutMe{
     top: 100px;
     display: flex;
     justify-content: center;
     flex:1;
 }
+
+/* First Section - Description*/
 
 .Info{
     width: 50%;
@@ -132,6 +141,8 @@ button:hover{
     list-style: none;
 }
 
+/* First Section - Images*/
+
 .Avatar{
     width: 50%;
     margin: 0;
@@ -156,6 +167,8 @@ button:hover{
     font-size: 4em;
 }
 
+/* Second Section - Previuos Projects*/
+
 .Cards{
     display: flex;
     flex-wrap: wrap;
@@ -170,6 +183,8 @@ button:hover{
 .image-container{
     cursor: pointer;
 }
+
+/* Second Section - Light shadow over image*/
 
 .image-container::before{
     width: 320px;
@@ -224,6 +239,8 @@ button:hover{
     font-size: 1em;
 }
 
+/* Footer Section - Contact Information*/
+
 footer{
     background-color: var(--dark);
     margin: 0;
@@ -258,6 +275,7 @@ footer ul li a{
     font-family: Arial;
 }
 
+/* Media Query Tablets */
 
 @media screen and (max-width: 992px){
     nav ul li{
@@ -286,10 +304,9 @@ footer ul li a{
         display: none;
     }
 
-
-
-
 }
+
+/* Media Query Phones */
 
 @media screen and (max-width: 768px){
     nav{

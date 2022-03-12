@@ -3,7 +3,7 @@ Portfolio of projects made by Klaus Manuel Cedillo Arredondo
 
 This project stores a webpage where it summarizes all of Klaus Cedillo’s Projects, *about  me* of the programmer and his contact information
 
-Progress 0%
+Progress 100%
 
 * [x] Header and Navbar
 * [x] About Me
