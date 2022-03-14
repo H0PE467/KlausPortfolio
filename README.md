@@ -14,10 +14,12 @@ Progress 100%
 * [x] Typography
 * [x] Animations
 * [x] Responsive
-## Mockup
-![FirstMockup](/assets/images/Mockup.png)
-*Subject to change*
 
-## Color Pallete
-![ColorPallete](/assets/images/ColorPallete.PNG)
-*Subject to change*
+
+## Screenshot of the Application
+
+![Screenshot of the Application](./assets/images/KlausPortfolioSS.PNG)
+
+## Link to the Application
+
+https://h0pe467.github.io/KlausPortfolio/
