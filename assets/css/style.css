@@ -1,329 +1,61 @@
-:root{
-    --dark:#1d1c1c;
-    --notsodark:#363535;
-    --light:#fff;
-    --notsolight:#8a8a8a;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
-body{
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--notsodark);
-    margin: 0;
-    color: var(--light);
-
-}
-
-
-/* Header over the webpage*/
-
-header{
-    width: 100%;
-    background-color: rgba(29, 28, 28, 0.95);
-    margin: 0;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 50;
-}
-
-h1{
-    font-weight: bold;
-    font-size: 4em;
-    margin: 0;
-    padding: 24px 72px;
-
-}
-
-h1:hover{
-    cursor: pointer;
-}
-
 nav{
-    justify-self:right;
-    flex: 1;
-    text-align: right;
+    background-color: #171b1f;
 }
 
-nav ul{
-    display: inline-block;
-    list-style: none;
-}
-
-nav ul li{
-    display: inline-block;
-    font-size: 2em;
-}
-
-nav ul li button{
-    color: var(--notsolight);
-    padding: 24px 48px;
-}
-
-a{
-    color: var(--notsolight);
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-    color: var(--light);
-    font-size: 1.05em;
-    transition-duration: 400ms;
-}
-
-nav button{
-    color: var(--notsolight);
-    text-decoration: none;
-    background: none;
-	color: inherit;
-	border: none;
-	cursor: pointer;
-}
-
-button:hover{
-    color: var(--light);
-    transition-duration: 400ms;
-}
-
-/* Empty section to avoid initial contect getting behind the navbar*/
-
-.vacio{
-    width: 100%;
-    height: 100px;
-    display: block;
-    position:relative;
-}
-
-/* First Section - Photo, Name and Data*/
-
-#AboutMe{
-    top: 100px;
-    display: flex;
-    justify-content: center;
-    flex:1;
-}
-
-/* First Section - Description*/
-
-.Info{
-    width: 50%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    height: 600px;
-}
-
-.Info ul, .Info h2{
-    padding: 0px 0px;
-    margin: 5px 50px;
-    text-align: right;
-    font-size: 3em;
-}
-
-.Info h2{
-    font-size: 3em;
-}
-
-.Info ul{
-    font-size: 2em;
+.footer-link{
+    color:#6C757D;
 }
 
 
-
-.Info ul li{
-    list-style: none;
-}
-
-/* First Section - Images*/
-
-.Avatar{
-    width: 50%;
-    margin: 0;
-    height: max-content;
-    overflow: auto;
-
-}
-
-.Avatar img{
-    position: absolute;
-    transform: scale(0.75);
-}
-
-#Photo2{
-    left: 950px;
-    top: 250px;
-}
-
-#Projects h2{
-    margin: 100px 0px 25px 0px;
-    text-align: center;
-    font-size: 4em;
-}
-
-/* Second Section - Previuos Projects*/
-
-.Cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.Proyect-Title{
-    text-align: center;
-    font-size: 2em;
-}
-
-.image-container{
-    cursor: pointer;
-}
-
-/* Second Section - Light shadow over image*/
-
-.image-container::before{
-    width: 320px;
-    height: 320px;
-    background-color: rgba(34, 34, 34, 0.5);
-    z-index: 30;
-    content: "";
-    position: absolute;
-    transition: 150ms;
-}
-
-.image-container:hover::before{   
-    background-color: rgba(34, 34, 34, 0);
-    z-index: -1;
-}
-
-.Project-card p,
-.Project-card ul {
-    font-size: 1.5em; 
-}
-
-#FirstProject img{
-    transform: scale(1);
-}
-
-#FirstProject .image-container::before{
-    width: 360px;
-    height: 360px;
-}
-
-
-.Project-card p{
-    font-weight: bold;
-}
-
-.Project-card ul{
-    list-style: none;
-    padding-left: 0px;
-}
-
-.Project-card ul li{
-    margin: 5px 0px;
-}
-
-.Project-card ul li span{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-}
-
-.Project-card ul li a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-}
-
-/* Footer Section - Contact Information*/
-
-footer{
-    background-color: var(--dark);
-    margin: 0;
-    padding-bottom: 0;
+.footer-link:hover{
+    color: #d7dde2;
+    transform: scale(1.1);
     transition: 500ms;
 }
 
-footer h3{
-    margin: 50px 0px 25px 0px;
-    text-align: center;
-    font-size: 2em;
-    padding-top: 50px;
-    }
+#About_Me{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
-footer ul{
-    display: flex;
-    flex-wrap: wrap;
+#Projects{
+    background-color: #171b1f;
+}
+
+#Contacts{
+    transition: 500ms;
+}
+
+.capabilites{
     list-style: none;
-    justify-content: space-evenly;
-    position: relative;
-    left: -30px;
-    padding-bottom: 25px;
-    margin: 0px;
 }
 
-footer ul li{
-    color: var(--light);
-    padding-top: 5px;
+.carousel-control-prev-icon {
+    background-color: #171b1f;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+    background-color: #171b1f;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-footer ul li a{
-    font-family: Arial;
-}
 
-/* Media Query Tablets */
 
-@media screen and (max-width: 992px){
-    nav ul li{
-        font-size: 1.5em;
-    }
+/* w-100 d-flex flex-row-reverse fs-5; */
 
-    nav ul li button{
-        color: var(--notsolight);
-        padding: 12px 24px;
-    }
-
-    .Info h2{
-        font-size: 2.5em;
-    }
-
-    .Info ul{
-        font-size: 1.5em;
-
-    }
-    #Photo1{
-        transform: scale(0.60);
-        right: -50px;
-    }
-
-    #Photo2{
-        display: none;
-    }
-
-}
-
-/* Media Query Phones */
-
-@media screen and (max-width: 768px){
-    nav{
-        display: none;
-    }
-
-    .Info h2{
-        font-size: 2em;
-    }
-
-    .Info ul{
-        font-size: 1em;
-
-    }
-
-    #Photo1{
-        transform: scale(0.30);
-        right: -120px;
+@media (min-width: 700px ) {
+    .navbar123{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        font-size: 1.25rem;
+        gap: 1.5em;
     }
 }
+
+

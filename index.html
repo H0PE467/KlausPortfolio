@@ -4,131 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klaus Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/fonts/icomoon.css">
 </head>
-<body>
+<body class="bg-dark">
     
-<!-- Navbar -->
+    <!-- Navbar -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
 
-    <header>
-        <h1>KMC</h1>
-        <nav>
-            <ul>
-                <li><button onclick="scrollfunc(1)" href="">About Me</button></li>
-                <li><button onclick="scrollfunc(2)" href="">Projects</button></li>
-                <li><button onclick="scrollfunc(3); setTimeout(white_footer,500)" href="">Contact</button></li>
+          <a class="navbar-brand fs-4" href="#">
+            <img src="./assets/images/kmc_logo.png" alt="" width="60" height="60" class="d-inline-block align-text-center mx-3">
+            Klaus Cedillo Arredondo
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 navbar123">
+              <li class="nav-item">
+                <a class="nav-link" href="#About_Me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="ContactLink" href="#Contacts">Contact</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-<!-- First Section - Photo, Name and Data-->
-        <div class="vacio"></div>
-        <section id="AboutMe">
-            <div class="Info">
-                <h2>Klaus Manuel <br> Cedillo Arredondo</h2>
-                <ul>
-                    <li>Full Stack Developer</li>
-                    <li>20 Years</li>
-                    <li>Birthday, October 4th</li>
-                    <li>Mexican<li></li>
-                    <li>Single</li>
+          </div>
+        </div>
+      </nav>
 
-                </ul>
-            </div>
-            <div class="Avatar">
-                <img id="Photo2" src="./assets/images/klaus_in_the_nasa.png" alt="PLain Image">
-                <img id="Photo1" src="./assets/images/klaus_photo.png" alt="PLain Image">
-            </div>
-        </section>
+    <!-- About Me -->
 
-<!-- Second Section - Previous Projects -->
-
-        <section id="Projects">
-            <h2>
-                Projects
-            </h2>
-            <div class="Cards">
-
-    <!-- PROJECT CARD 1-->
-
-                <div class="Project-card">
-                    <h3 class="Proyect-Title">Css Cheatsheet Project</h3>
-                    <div class="image-container">
-                        <a href="https://h0pe467.github.io/CodingMiniProject/" target="_blank">
-                            <img src="./assets/images/css_cheatsheet_project.png" alt="PLain Image">
-                        </a>
-                    </div>
-                    <p>Languages</p>
-                    <ul>
-                        <li class="icon-html-five"><span> Html</span></li>
-                        <li class="icon-css3"><span> Css</span></li>
-                    </ul>
-                    <p>Link</p>
-                    <ul>
-                        <li class="icon-github"><a href="https://github.com/H0PE467/CodingMiniProject" target="_blank"> Github.com/CodingMiniProject </a></li>
-                    </ul>
-                </div>
-
-
-    <!-- PROJECT CARD 2-->
-                <div class="Project-card" id="FirstProject">
-                    <h3 class="Proyect-Title">Horiseon Project</h3>
-                    <div class="image-container">                        
-                        <a href="https://h0pe467.github.io/HoriseonWebOptimized/" target="_blank">
-                            <img src="./assets/images/horiseon_project.png" alt="PLain Image">
-                        </a>
-                    </div>
-                    <p>Languages</p>
-                    <ul>
-                        <li class="icon-html-five"><span> Html</span></li>
-                        <li class="icon-css3"><span> Css</span></li>
-                    </ul>
-                    <p>Link</p>
-                    <ul>
-                        <li class="icon-github"><a href="https://github.com/H0PE467/HoriseonWebOptimized" target="_blank"> Github.com/HoriseonWebOptimized </a></li>
-                    </ul>
-                </div>
-
-    <!-- PROJECT CARD 3-->
-
-                <div class="Project-card">
-                    <h3 class="Proyect-Title">New Project</h3>
-                    <div class="image-container">
-                        <a href="https://github.com/H0PE467" target="_blank">
-                            <img src="./assets/images/coming_soon.png" alt="Plain Image">
-                        </a>
-                    </div>
-                    <p>Languages</p>
-                    <ul>
-                        <li class="icon-html-five"><span> Html</span></li>
-                        <li class="icon-css3"><span> Css</span></li>
-                        <li class="icon-document-file-java"><span> JavaScript</span></li>
-                    </ul>
-                    <p>Link</p>
-                    <ul>
-                        <li class="icon-github"><a href="https://github.com/H0PE467" target="_blank"> Github.com/H0PE </a></li>
+    <section class="bg-dark text-white" id="About_Me">
+        <div class="container col-lg-3 col-md-4 col-6 ">
+            <div class="card mb-3 bg-dark border-dark">
+                <img src="./assets/images/bootstrap-logo.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Klaus Manuel Cedillo Arredondo</h5>
+                    <ul class="capabilites">
+                        <li>Full Stack Developer</li>
+                        <li>20 Years</li>
+                        <li>Birthday, October 4th</li>
+                        <li>Mexican</li>
+                        <li>Single</li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-<!-- Footer Section - Contact information -->
+    <!-- Projects -->
+ 
+    <section class=" text-white my-0 py-lg-5 py-3" id="Projects">
+        <h2 class="py-3 fs-1 project-title" align="center">Projects</h2>
+        <div class="container col-12 col-lg-8">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="https://h0pe467.github.io/dayPlanner/" target="_blank">
+                      <img src="./assets/images/Work Day Scheduler SS.PNG" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="bg-dark carousel-caption d-none d-md-block">
+                      <h5>Work Day Scheduler</h5>
+                      <p class="p-0 m-0">HTML, CSS, JavaScript, jQuery</p>
+                      <a href="https://github.com/H0PE467/dayPlanner" target="_blank" class="link-secondary">Github/dayPlanner</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://h0pe467.github.io/weatherSearch/" target="_blank">
+                      <img src="./assets/images/Weather Search SS.png" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="bg-dark carousel-caption d-none d-md-block">
+                      <h5>Weather Search</h5>
+                      <p class="p-0 m-0">HTML, CSS, JavaScript, jQuery, Open Weather Map API</p>
+                      <a href="https://github.com/H0PE467/weatherSearch" target="_blank" class="link-secondary">Github/weatherSearch</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://h0pe467.github.io/projectOrganizer/" target="_blank">
+                      <img src="./assets/images/ProjectOrganizerSS.PNG" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="bg-dark carousel-caption d-none d-md-block">
+                      <h5>Project Organizer</h5>
+                      <p class="p-0 m-0">HTML, CSS, JavaScript, jQuery, Bootstrap</p>
+                      <a href="https://github.com/H0PE467/projectOrganizer" target="_blank" class="link-secondary">Github/projectOrganizer</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://h0pe467.github.io/searchLibraryOfCongress/" target="_blank">
+                      <img src="./assets/images/Library of Congress - Search SS.PNG" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="bg-dark carousel-caption d-none d-md-block">
+                      <h5>Library of Congress Search Tool</h5>
+                      <p class="p-0 m-0">HTML, CSS, JavaScript, jQuery, Bootstrap, Library of Congress API</p>
+                      <a href="https://github.com/H0PE467/searchLibraryOfCongress" target="_blank" class="link-secondary">Github/searchLibraryOfCongress</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        
+    </section>
+        
+    <!-- Footer -->
 
-        <footer id="contact">
-            <h3> Contact </h3>
-            <ul>
-                <li class="icon-mail4"><a href="mailto:klausmcedillo@gmail.com" target="_blank"> klausmcedillo@gmail.com</a></li>
-                <li class="icon-github"><a href="https://github.com/H0PE467" target="_blank"> Github/H0PE</a></li>
-                <li class="icon-whatsapp"><a href="https://wa.me/5543864454" target="_blank"> (55) 1234 5678</a></li>
-            </ul>
-        </footer>
-    </main>
+    <footer class="my-4 py-4" align="center" id="Contacts">
+        <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3">
+            <li class="nav-item">
+                <a href="mailto: klausmcedillo@gmail.com" target="_blank" class="nav-link px-2 footer-link">klausmcedillo@gmail.com</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://wa.me/5543864454" target="_blank" class="nav-link px-2 footer-link">WhatsApp</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://github.com/H0PE467" target="_blank" class="nav-link px-2 footer-link">Github</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.linkedin.com/in/klaus-cedillo-b0a660231/" target="_blank" class="nav-link px-2 footer-link">Linkedin</a>
+            </li>
+            <li class="nav-item">
+                <a href="tel:55-4386-4454" target="_blank" class="nav-link px-2 footer-link">(55) 4386 4454</a>
+            </li>
+      </ul>
+      <a href="./assets/Curriculum_cv_en.pdf" download target="_blank" class="footer-link" >Download CV</a>
+    </footer>
+      
+
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
-
-<!-- JavaScript -->
-
-<script src="script.js"></script>
 </html>
