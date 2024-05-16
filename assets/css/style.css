@@ -7,8 +7,7 @@ body{
 }
 
 .exp{
-    border:1px solid #0F172A;
-    background-color: #0F172A;
+    border:1px solid transparent;
 
 }
 
@@ -16,4 +15,9 @@ body{
     border:1px solid #3c5796;
     border-style: outset;
     background-color: #13203f;
+}
+
+.info{
+    background-color: #13203f;
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(15,23,42,1) 10%);;
 }
