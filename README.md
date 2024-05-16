@@ -18,7 +18,7 @@ Progress 100%
 
 ## Screenshot of the Application
 
-![Screenshot of the Application](./assets/images/Portfolio.PNG)
+![Screenshot of the Application](./assets/images/Portfolio.png)
 
 ## Link to the Application
 
