@@ -2,60 +2,18 @@ html {
     scroll-behavior: smooth;
 }
 
-nav{
-    background-color: #171b1f;
+body{
+    background-color: #0F172A;
 }
 
-.footer-link{
-    color:#6C757D;
+.exp{
+    border:1px solid #0F172A;
+    background-color: #0F172A;
+
 }
 
-
-.footer-link:hover{
-    color: #d7dde2;
-    transform: scale(1.1);
-    transition: 500ms;
+.exp:hover{
+    border:1px solid #3c5796;
+    border-style: outset;
+    background-color: #13203f;
 }
-
-#About_Me{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-#Projects{
-    background-color: #171b1f;
-}
-
-#Contacts{
-    transition: 500ms;
-}
-
-.capabilites{
-    list-style: none;
-}
-
-.carousel-control-prev-icon {
-    background-color: #171b1f;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-   }
-   
-.carousel-control-next-icon {
-    background-color: #171b1f;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-
-
-/* w-100 d-flex flex-row-reverse fs-5; */
-
-@media (min-width: 700px ) {
-    .navbar123{
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        font-size: 1.25rem;
-        gap: 1.5em;
-    }
-}
-
-

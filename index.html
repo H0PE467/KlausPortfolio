@@ -6,155 +6,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
 </head>
-<body class="bg-dark">
-    
-    <!-- Navbar -->
-    
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
+<body class="">
 
-          <a class="navbar-brand fs-4" href="#">
-            <img src="./assets/images/kmc_logo.png" alt="" width="60" height="60" class="d-inline-block align-text-center mx-3">
-            Klaus Cedillo Arredondo
-          </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 navbar123">
-              <li class="nav-item">
-                <a class="nav-link" href="#About_Me">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="ContactLink" href="#Contacts">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  
+  <div class="flex text-slate-200">
+    <div class="w-1/2 h-screen"></div>
+    <div class="w-1/2 h-screen pl-48 fixed">
+      <div class="h-1/3 w-full 
+                  flex flex-col justify-end items-center">
+        <h1 class="w-full px-8 font-bold text-6xl">
+          Klaus Cedillo
+        </h1>
+        <p class="w-full px-8 font-bold text-2xl">
+          Software Engineer
+        </p>
+        <p class="w-full px-8 text-lg">
+          Looking to build new and exciting projects
+        </p>
+      </div>
+      <nav class="h-1/3 w-full">
+        <ul class="h-full w-full flex flex-col justify-center">
+          <a href="#BioSection"><li class="font-bold text-lg text-slate-500 p-4	hover:text-slate-200">- Bio</li></a>
+          <a href="#ExpSection"><li class="font-bold text-lg text-slate-500 p-4	hover:text-slate-200">- Experience</li></a>
+          <a href="#ProjectSection"><li class="font-bold text-lg text-slate-500 p-4	hover:text-slate-200">- Projects</li></a>         
+        </ul>
       </nav>
+      <footer class="h-1/3 w-full flex flex-col justify-center pl-5 gap-2">
+        <ul class="w-full flex  justify-start items-start gap-10">
+          <a href="https://www.facebook.com/klaus.cedilloarredondo/" target="_blank"><i class="devicon-facebook-plain text-4xl text-slate-400 hover:text-slate-200"></i></a>
+          <a href="https://github.com/H0PE467" target="_blank"><i class="devicon-github-original text-4xl text-slate-400 hover:text-slate-200"></i></a>
+          <a href="https://stackoverflow.com/users/18224816/klaus-manuel-cedillo" target="_blank"><i class="devicon-stackoverflow-plain text-4xl text-slate-400 hover:text-slate-200"></i></a>
+          <a href="https://www.linkedin.com/in/klaus-cedillo-b0a660231/" target="_blank"><i class="devicon-linkedin-plain text-4xl text-slate-400 hover:text-slate-200"></i></a>
+        </ul>
+        <a class="text-slate-400 hover:text-slate-200" href="./assets/curriculum_klaus_en.pdf" download>Download Curriculum</a>
+        <a class="text-slate-400 hover:text-slate-200"  href=""> Ver en Español</a>
 
-    <!-- About Me -->
+      </footer>
+      
 
-    <section class="bg-dark text-white" id="About_Me">
-        <div class="container col-lg-3 col-md-4 col-6 ">
-            <div class="card mb-3 bg-dark border-dark">
-                <img src="./assets/images/Profile Picture Square.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Klaus Manuel Cedillo Arredondo</h5>
-                    <ul class="capabilites">
-                        <li>Full Stack Developer</li>
-                        <li>20 Years</li>
-                        <li>Birthday, October 4th</li>
-                        <li>Mexican</li>
-                        <li>Single</li>
-                    </ul>
-                </div>
-            </div>
+    </div>
+    <div class="w-1/2 px-36 mb-20 flex flex-col gap-10">
+
+      <div class="w-full h-10" id="BioSection">      </div>
+
+      <!-- My info -->
+
+      <p>
+        My name is Klaus Cedillo, and for the past three years, I've been working in 
+        web development. Through both study and hands-on experience, I've learned 
+        many skills on this field. Programming isn't just a job for me; it's a genuine passion. 
+        I find great satisfaction in tackling complex problems and crafting elegant solutions.
+
+      </p>
+      <p>
+        I'm particularly drawn to projects that challenge me.  My colleagues often find me 
+        friendly and supportive, as I'm always willing to lend a hand and share my expertise whenever needed.
+      </p>
+      <p>
+        During my downtime, I love playing video games, getting into tabletop adventures, 
+        and catching live concerts. These are my go-to ways to chill out and have some fun. 
+      </p>
+
+      <!-- Experience -->
+
+      <div class="flex p-5 rounded exp" id="ExpSection">
+        <div class="w-1/4">
+          <h3>2024 (Currently)</h3>
         </div>
-    </section>
+        <div class="w-3/4 flex flex-col gap-5">
 
-    <!-- Projects -->
- 
-    <section class=" text-white my-0 py-lg-5 py-3" id="Projects">
-        <h2 class="py-3 fs-1 project-title" align="center">Projects</h2>
-        <div class="container col-12 col-lg-8">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <a href="https://h0pe467.github.io/dayPlanner/" target="_blank">
-                      <img src="./assets/images/Work Day Scheduler SS.PNG" class="d-block w-100" alt="...">
-                    </a>
-                    <div class="bg-dark carousel-caption d-none d-md-block">
-                      <h5>Work Day Scheduler</h5>
-                      <p class="p-0 m-0">HTML, CSS, JavaScript, jQuery</p>
-                      <a href="https://github.com/H0PE467/dayPlanner" target="_blank" class="link-secondary">Github/dayPlanner</a>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://h0pe467.github.io/weatherSearch/" target="_blank">
-                      <img src="./assets/images/Weather Search SS.png" class="d-block w-100" alt="...">
-                    </a>
-                    <div class="bg-dark carousel-caption d-none d-md-block">
-                      <h5>Weather Search</h5>
-                      <p class="p-0 m-0">HTML, CSS, JavaScript, jQuery, Open Weather Map API</p>
-                      <a href="https://github.com/H0PE467/weatherSearch" target="_blank" class="link-secondary">Github/weatherSearch</a>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://h0pe467.github.io/projectOrganizer/" target="_blank">
-                      <img src="./assets/images/ProjectOrganizerSS.PNG" class="d-block w-100" alt="...">
-                    </a>
-                    <div class="bg-dark carousel-caption d-none d-md-block">
-                      <h5>Project Organizer</h5>
-                      <p class="p-0 m-0">HTML, CSS, JavaScript, jQuery, Bootstrap</p>
-                      <a href="https://github.com/H0PE467/projectOrganizer" target="_blank" class="link-secondary">Github/projectOrganizer</a>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="https://h0pe467.github.io/searchLibraryOfCongress/" target="_blank">
-                      <img src="./assets/images/Library of Congress - Search SS.PNG" class="d-block w-100" alt="...">
-                    </a>
-                    <div class="bg-dark carousel-caption d-none d-md-block">
-                      <h5>Library of Congress Search Tool</h5>
-                      <p class="p-0 m-0">HTML, CSS, JavaScript, jQuery, Bootstrap, Library of Congress API</p>
-                      <a href="https://github.com/H0PE467/searchLibraryOfCongress" target="_blank" class="link-secondary">Github/searchLibraryOfCongress</a>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+          <h2 class="font-bold text-cyan-400">Front-end Developer</h2>
+          <p>
+            Im currently working on a side project with AWS. Im a Front-end developer dedicated to make responsive, user-friendly components and views for the user.
+          </p>
+          <ul class="flex gap-3 flex-wrap	">
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">React</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Tailwind</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Typescript</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Springboot</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Java</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Docker</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">MySQL</p>
+          </ul>
         </div>
-        
-    </section>
-        
-    <!-- Footer -->
+      </div>
 
-    <footer class="my-4 py-4" align="center" id="Contacts">
-        <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3">
-            <li class="nav-item">
-                <a href="mailto: klausmcedillo@gmail.com" target="_blank" class="nav-link px-2 footer-link">klausmcedillo@gmail.com</a>
-            </li>
-            <li class="nav-item">
-                <a href="https://wa.me/5543864454" target="_blank" class="nav-link px-2 footer-link">WhatsApp</a>
-            </li>
-            <li class="nav-item">
-                <a href="https://github.com/H0PE467" target="_blank" class="nav-link px-2 footer-link">Github</a>
-            </li>
-            <li class="nav-item">
-                <a href="https://www.linkedin.com/in/klaus-cedillo-b0a660231/" target="_blank" class="nav-link px-2 footer-link">Linkedin</a>
-            </li>
-            <li class="nav-item">
-                <a href="tel:55-4386-4454" target="_blank" class="nav-link px-2 footer-link">(55) 4386 4454</a>
-            </li>
-      </ul>
-      <a href="./assets/curriculum_klaus_en.pdf" download target="_blank" class="footer-link" >Download CV - English</a>
-      <a href="./assets/curriculum_klaus_es.pdf" download target="_blank" class="footer-link" >Descargar Cv - Español </a>
+      <div class="flex p-5 rounded exp">
+        <div class="w-1/4">
+          <h3>2024</h3>
+        </div>
+        <div class="w-3/4 flex flex-col gap-5">
 
-    </footer>
+          <h2 class="font-bold text-cyan-400">Full-stack Developer</h2>
+          <p>
+            I worked both in the design and development of this app. I provided support to other partners, overview the process and organize the team to efficiently function. 
+          </p>
+          <ul class="flex gap-3 flex-wrap	">
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">React</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Tailwind</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Django</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">MySQL</p>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex p-5 rounded exp">
+        <div class="w-1/4">
+          <h3>2023</h3>
+        </div>
+        <div class="w-3/4 flex flex-col gap-5">
+
+          <h2 class="font-bold text-cyan-400">Mobile App Developer</h2>
+          <p>
+            My team used Figma to design a friendly app which later we developed. The app interacted with the database and the information shown on a dedicated website for admins only.
+          </p>
+          <ul class="flex gap-5 flex-wrap	">
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Swift</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">HTML & CSS</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Django</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">MySQL</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Figma</p>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex p-5 rounded exp">
+        <div class="w-1/4">
+          <h3>2022</h3>
+        </div>
+        <div class="w-3/4 flex flex-col gap-5">
+
+          <h2 class="font-bold text-cyan-400">Game Developer</h2>
+          <p>
+            During this year I worked with my team on a Unity based project. The game was singleplayer, connected to the database ny making GET and Post requests.
+          </p>
+          <ul class="flex gap-5 flex-wrap	">
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Unity</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Bootstrap</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">Django</p>
+            <p class="bg-cyan-800 text-sm text-cyan-200 px-2 py-1 rounded-full">MySQL</p>
+          </ul>
+        </div>
+      </div>
+
+
+      <h2 class="text-2xl font-bold" id="ProjectSection">Projects</h2>
+
+      <div>
+        <img src="./assets/images/AWS.png" alt="" class="w-full opacity-30 hover:opacity-80">
+        <h2 class="font-bold my-3">AWS Connect</h2>
+        <p>Im currently working with AWS to create a new app for Contact Centers which will help supervisors aid their agents in calls when necessary</p>
+      </div>
+
+      <div>
+        <img src="./assets/images/The Pueblito.png" alt="" class="w-full mt-5 opacity-30 hover:opacity-80">
+        <h2 class="font-bold my-3">The Pueblito</h2>
+        <p>A new service that offer low cost shipping for small and medium companies and job opportunities as messengers</p>
+      </div>
+
+      <div>
+        <img src="./assets/images/SEL4C APP.png" alt="" class="w-full mt-5 opacity-30 hover:opacity-80">
+        <h2 class="font-bold my-3">SEL4C</h2>
+        <p>A new app available on iOs to help you start your own business. It contains challenges, excersices and more to help you find define your objectives, priorities and goals.</p>
+      </div>
+
+      <div>
+        <img src="./assets/images/Fruit Market.png" alt="" class="w-full mt-5 opacity-30 hover:opacity-80">
+        <h2 class="font-bold my-3">Fruit Market</h2>
+        <p>A unity created videogame to help elementary schools teach children basic arithmetic and fractions</p>
+      </div>
+
+      
+      <div>
+        <img src="./assets/images/Library of Congress - Search SS.PNG" alt="" class="w-full mt-5 opacity-30 hover:opacity-80">
+        <h2 class="font-bold my-3">Library Congress</h2>
+        <p>This project connects to the Library Congress and searches for the prompt and type of document, such as magazines or newspapers, that you desire.</p>
+      </div>
+
+      <div>
+        <img src="./assets/images/Weather Search SS.png" alt="" class="w-full mt-5 opacity-30 hover:opacity-80">
+        <h2 class="font-bold my-3">Weather Search</h2>
+        <p>This project helps you know the forecast of an exact location today and the upcoming days</p>
+      </div>
+
+      
+
+    </div>
+
+
+  </div>
+
+
       
 
 
-    <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
