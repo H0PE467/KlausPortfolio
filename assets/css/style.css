@@ -21,3 +21,33 @@ body{
     background-color: #13203f;
     background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(15,23,42,1) 10%);;
 }
+
+@media (max-width: 600px) {
+
+    #canvas{
+        width: 100%;
+    }
+
+    .middleScreen{
+        display: none;
+    }
+
+    .profileScreen{
+        display: none;
+    }
+
+    .info{
+        background-color: transparent;
+        /* background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(15,23,42,1) 10%);; */
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .projectImage{
+        opacity: 100%;
+    }
+
+
+
+  }
